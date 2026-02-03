@@ -15,12 +15,14 @@ userid = [
 ]
 projects = [
         {
+            "source": "fugaku",
             "group": "hp150272",
             "name": "「富岳」で目指すシミュレーション・AI駆動型次世代医療・創薬 : 2025-04-01 - 2026-03-31",
-            "expected1": 0,
-            "expected2": 0
+            "expected1": 590074,
+            "expected2": 590074
         },
         {
+            "source": "fugaku",
             "group": "hp250059",
             "name": "SIMULATION STUDY OF THE MOLECULAR MECHANISM OF THE PATHOGENIC ALA711-GLU714 DELETION MUTATION IN THE IGF1R/INSR HYBRID HETERODIMER : 2025-04-01 - 2026-03-31",
             "expected1": 613500,
@@ -101,6 +103,7 @@ def outputJson(outname, groupList, groupInfo):
             'name': groupInfo['name'],
             'expected1': groupInfo['expected1'],
             'expected2': groupInfo['expected2'],
+            'source': groupInfo['source'],
             }
     result['data1'] = []
     result['data2'] = []
